@@ -15,4 +15,10 @@ class MyText {
     color: MyColor.three,
     fontSize: 30,
   );
+
+  TextStyle buttontext = GoogleFonts.poppins(
+    fontWeight: FontWeight.w500,
+    color: MyColor.two,
+    fontSize: 15,
+  );
 }

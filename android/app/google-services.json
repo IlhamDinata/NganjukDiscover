@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "703252498789",
+    "project_id": "nganjukdiscover-689e9",
+    "storage_bucket": "nganjukdiscover-689e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703252498789:android:1364b910178dc714adb98c",
+        "android_client_info": {
+          "package_name": "com.example.nganjuk_discover"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "703252498789-jlo5qv8r0n1odckunp9qeibscr12snfl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nganjuk_discover",
+            "certificate_hash": "e7cf679ee2819c5daf98af973cebe1f6e1fd748c"
+          }
+        },
+        {
+          "client_id": "703252498789-il4egm38u3unotgqgck80gmjos5o5b7a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG-lZWx0lFZ3_dKVtEcQXpKmm9rWA1lW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "703252498789-igj7prhk61gpkk4l0c4h7mldn78taqqi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

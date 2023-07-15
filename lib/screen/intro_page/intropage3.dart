@@ -23,7 +23,7 @@ class IntroPage3 extends StatelessWidget {
             Container(
               width: 300,
               height: 300,
-              child: Image.asset('assets/wisatapage.png'),
+              child: Image.asset('assets/wisatanganjuk.png'),
             ),
             SizedBox(height: Dimens(context).height * 0.03),
             Padding(
