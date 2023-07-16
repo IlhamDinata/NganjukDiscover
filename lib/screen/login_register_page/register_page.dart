@@ -8,7 +8,9 @@ class RegisterPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: MyColor.white,
-      body: Center(child: Text('Register Screen')),
+      body: Center(
+        child: Text('Register Screen'),
+      ),
     );
   }
 }
