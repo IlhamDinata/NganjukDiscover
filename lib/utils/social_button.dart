@@ -36,12 +36,13 @@ class SocialButton extends StatelessWidget {
             ],
           ),
         ),
+        const SizedBox(height: 20),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SquareTile(imagePath: 'assets/gambar/google.jpeg'),
+            SquareTile(imagePath: 'assets/gambar/google.png'),
             const SizedBox(width: 10),
-            SquareTile(imagePath: 'assets/gambar/facebook.jpeg'),
+            SquareTile(imagePath: 'assets/gambar/facebook.png'),
           ],
         ),
       ],

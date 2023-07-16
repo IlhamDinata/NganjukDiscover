@@ -48,7 +48,7 @@ class LoginPage extends StatelessWidget {
                     textInputType: TextInputType.visiblePassword,
                     obscure: true),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 25),
+                  padding: const EdgeInsets.symmetric(horizontal: 5),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
