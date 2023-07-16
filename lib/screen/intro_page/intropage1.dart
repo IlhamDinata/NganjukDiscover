@@ -16,20 +16,20 @@ class IntroPage1 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
+            SizedBox(
               height: 100,
               width: 100,
-              child: Image.asset('assets/NganjukLogoNew.png'),
+              child: Image.asset('assets/gambar/NganjukLogoNew.png'),
             ),
             SizedBox(height: Dimens(context).height * 0.05),
-            Container(
+            SizedBox(
               // width: 300,
               // height: 300,
-              child: Lottie.asset('assets/nganjukdiscover3.json'),
+              child: Lottie.asset('assets/lottie/nganjukdiscover.json'),
             ),
             SizedBox(height: Dimens(context).height * 0.06),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20),
+              padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Text(
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget interdum nibh. In ultricies vel. ",
                 style: MyText().introductiontext,

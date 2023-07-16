@@ -7,8 +7,6 @@ import 'package:nganjuk_discover/utils/mytext.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:page_transition/page_transition.dart';
 
-import '../../utils/dimens.dart';
-
 class IntroductionPage extends StatefulWidget {
   const IntroductionPage({super.key});
 
@@ -32,7 +30,7 @@ class _IntroductionPageState extends State<IntroductionPage> {
                 onLastIntroPage = (index == 2);
               });
             },
-            children: [
+            children: const [
               IntroPage1(),
               IntroPage2(),
               IntroPage3(),

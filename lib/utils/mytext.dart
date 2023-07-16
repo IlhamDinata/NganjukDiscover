@@ -21,4 +21,21 @@ class MyText {
     color: MyColor.two,
     fontSize: 15,
   );
+
+  TextStyle titlelogregtext = GoogleFonts.poppins(
+    fontWeight: FontWeight.w500,
+    color: MyColor.four,
+    fontSize: 15,
+  );
+
+  TextStyle buttonbox = GoogleFonts.poppins(
+    fontWeight: FontWeight.w600,
+    color: MyColor.white,
+  );
+
+  TextStyle transparanttext = GoogleFonts.poppins(
+    fontWeight: FontWeight.w300,
+    color: MyColor.grey.withOpacity(0.8),
+    fontSize: 14,
+  );
 }

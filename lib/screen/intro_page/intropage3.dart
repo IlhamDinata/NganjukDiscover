@@ -20,14 +20,14 @@ class IntroPage3 extends StatelessWidget {
               style: MyText().introductionkuliner,
             ),
             SizedBox(height: Dimens(context).height * 0.03),
-            Container(
+            SizedBox(
               width: 300,
               height: 300,
-              child: Image.asset('assets/wisatanganjuk.png'),
+              child: Image.asset('assets/gambar/wisatanganjuk.png'),
             ),
             SizedBox(height: Dimens(context).height * 0.03),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20),
+              padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Text(
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget interdum nibh. In ultricies vel. ",
                 style: MyText().introductiontext,
