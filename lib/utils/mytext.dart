@@ -38,4 +38,16 @@ class MyText {
     color: MyColor.grey.withOpacity(0.8),
     fontSize: 14,
   );
+
+  TextStyle nametext = GoogleFonts.poppins(
+    fontWeight: FontWeight.w500,
+    color: MyColor.grey.withOpacity(0.8),
+    fontSize: 15,
+  );
+
+  TextStyle smallbuttontext = GoogleFonts.poppins(
+    fontWeight: FontWeight.w500,
+    color: MyColor.four,
+    fontSize: 14,
+  );
 }

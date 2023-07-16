@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:nganjuk_discover/utils/mycolors.dart';
+import 'package:nganjuk_discover/utils/mytext.dart';
 
 class SquareTile extends StatelessWidget {
-  const SquareTile({super.key, required this.imagePath});
+  const SquareTile({super.key, required this.imagePath, required this.text});
 
   final String imagePath;
+  final String text;
 
   @override
   Widget build(BuildContext context) {
@@ -15,9 +17,19 @@ class SquareTile extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
         color: Colors.grey[200],
       ),
-      child: Image.asset(
-        imagePath,
-        height: 40,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset(
+            imagePath,
+            height: 40,
+          ),
+          SizedBox(width: 10),
+          Text(
+            text,
+            style: MyText().nametext,
+          )
+        ],
       ),
     );
   }

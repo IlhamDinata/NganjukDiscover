@@ -45,7 +45,7 @@ class MainApp extends StatelessWidget {
                     debugShowCheckedModeBanner: false,
                     initialRoute: authController.isSkipIntro.isTrue
                         ? authController.isAuth.isTrue
-                            ? PagesPath.homescreen
+                            ? PagesPath.homepage
                             : PagesPath.loginpage
                         : PagesPath.introduction,
                     // initialRoute: AppPages.introduction,

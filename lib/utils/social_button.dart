@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:nganjuk_discover/utils/app_pages.dart';
 import 'package:nganjuk_discover/utils/mycolors.dart';
 import 'package:nganjuk_discover/utils/mytext.dart';
 import 'package:nganjuk_discover/utils/square_tile.dart';
@@ -37,12 +39,51 @@ class SocialButton extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 20),
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                SquareTile(
+                  imagePath: 'assets/gambar/google.png',
+                  text: 'Google',
+                ),
+                const SizedBox(width: 10),
+                SquareTile(
+                    imagePath: 'assets/gambar/facebook.png', text: 'Facebook'),
+              ],
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 38, vertical: 10),
+              child: InkWell(
+                onTap: () {
+                  Get.toNamed(PagesPath.homepage);
+                },
+                child: SquareTile(
+                    imagePath: 'assets/gambar/guest.png',
+                    text: 'Login as Guest'),
+              ),
+            ),
+          ],
+        ),
+        SizedBox(height: 20),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SquareTile(imagePath: 'assets/gambar/google.png'),
-            const SizedBox(width: 10),
-            SquareTile(imagePath: 'assets/gambar/facebook.png'),
+            Text(
+              'Don\'t have any account ? ',
+              style: MyText().transparanttext,
+            ),
+            InkWell(
+              onTap: () {
+                Get.toNamed(PagesPath.registerpage);
+              },
+              child: Text(
+                'Register here',
+                style: MyText().smallbuttontext,
+              ),
+            ),
           ],
         ),
       ],
