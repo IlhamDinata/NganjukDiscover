@@ -10,6 +10,7 @@ import 'package:nganjuk_discover/utils/text_box.dart';
 class RegisterPage extends StatelessWidget {
   RegisterPage({super.key});
 
+  final TextEditingController usernameController = TextEditingController();
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
   final TextEditingController reTypePasswordController =
@@ -35,6 +36,12 @@ class RegisterPage extends StatelessWidget {
                   'Register Your Account',
                   style: MyText().titlelogregtext,
                 ),
+                const SizedBox(height: 20),
+                TextBox(
+                    controller: usernameController,
+                    text: 'Username',
+                    textInputType: TextInputType.name,
+                    obscure: false),
                 const SizedBox(height: 20),
                 TextBox(
                     controller: emailController,
@@ -67,7 +74,7 @@ class RegisterPage extends StatelessWidget {
                 ),
                 const SizedBox(height: 25),
                 SocialButton(),
-                SizedBox(height: 25),
+                SizedBox(height: 10),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
