@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:nganjuk_discover/utils/app_pages.dart';
 import 'package:nganjuk_discover/utils/button_box.dart';
 import 'package:nganjuk_discover/utils/mycolors.dart';
 import 'package:nganjuk_discover/utils/mytext.dart';
@@ -66,6 +67,25 @@ class LoginPage extends StatelessWidget {
                 ButtonBox(),
                 const SizedBox(height: 35),
                 SocialButton(),
+                SizedBox(height: 20),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Don\'t have any account ? ',
+                      style: MyText().transparanttext,
+                    ),
+                    InkWell(
+                      onTap: () {
+                        Get.toNamed(PagesPath.registerpage);
+                      },
+                      child: Text(
+                        'Register here',
+                        style: MyText().smallbuttontext,
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),

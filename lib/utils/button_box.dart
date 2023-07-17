@@ -10,7 +10,7 @@ class ButtonBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Get.snackbar('Login', 'Login Successfully');
+        Get.snackbar('Login', 'Login/Register Successfully');
       },
       child: Container(
         alignment: Alignment.center,
