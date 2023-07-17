@@ -4,14 +4,15 @@ import 'package:nganjuk_discover/utils/mycolors.dart';
 import 'package:nganjuk_discover/utils/mytext.dart';
 
 class ButtonBox extends StatelessWidget {
-  const ButtonBox({super.key});
+  ButtonBox({super.key, this.onTap, this.label});
+
+  final Function()? onTap;
+  final String? label;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {
-        Get.snackbar('Login', 'Login/Register Successfully');
-      },
+      onTap: onTap,
       child: Container(
         alignment: Alignment.center,
         height: 55,
@@ -25,7 +26,7 @@ class ButtonBox extends StatelessWidget {
             ),
           ],
         ),
-        child: Text('Sign In', style: MyText().buttonbox),
+        child: Text('${label}', style: MyText().buttonbox),
       ),
     );
   }

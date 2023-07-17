@@ -67,25 +67,6 @@ class SocialButton extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(height: 20),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'Don\'t have any account ? ',
-              style: MyText().transparanttext,
-            ),
-            InkWell(
-              onTap: () {
-                Get.toNamed(PagesPath.registerpage);
-              },
-              child: Text(
-                'Register here',
-                style: MyText().smallbuttontext,
-              ),
-            ),
-          ],
-        ),
       ],
     );
   }

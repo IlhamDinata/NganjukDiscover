@@ -31,6 +31,11 @@ class RegisterPage extends StatelessWidget {
                   child: Image.asset('assets/gambar/login.png'),
                 ),
                 const SizedBox(height: 30),
+                Text(
+                  'Register Your Account',
+                  style: MyText().titlelogregtext,
+                ),
+                const SizedBox(height: 20),
                 TextBox(
                     controller: emailController,
                     text: 'E-Mail',
@@ -49,7 +54,17 @@ class RegisterPage extends StatelessWidget {
                     textInputType: TextInputType.visiblePassword,
                     obscure: true),
                 const SizedBox(height: 20),
-                ButtonBox(),
+                ButtonBox(
+                  onTap: () {
+                    // Get.toNamed(PagesPath.homepage);
+                    Get.snackbar(
+                      'Register',
+                      'Register Successfully',
+                      duration: Duration(seconds: 1),
+                    );
+                  },
+                  label: 'Sign Up',
+                ),
                 const SizedBox(height: 35),
                 SocialButton(),
                 SizedBox(height: 20),
@@ -65,7 +80,7 @@ class RegisterPage extends StatelessWidget {
                         Get.toNamed(PagesPath.loginpage);
                       },
                       child: Text(
-                        'Login here',
+                        ' Login here',
                         style: MyText().smallbuttontext,
                       ),
                     ),

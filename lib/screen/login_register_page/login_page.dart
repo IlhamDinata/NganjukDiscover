@@ -54,7 +54,9 @@ class LoginPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Get.toNamed(PagesPath.forgotpassword);
+                        },
                         child: Text(
                           'Forgot Password ?',
                           style: MyText().transparanttext,
@@ -64,7 +66,17 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 20),
-                ButtonBox(),
+                ButtonBox(
+                  onTap: () {
+                    // Get.toNamed(PagesPath.homepage);
+                    Get.snackbar(
+                      'Login',
+                      'Login Successfully',
+                      duration: Duration(seconds: 1),
+                    );
+                  },
+                  label: 'Sign In',
+                ),
                 const SizedBox(height: 35),
                 SocialButton(),
                 SizedBox(height: 20),
