@@ -50,4 +50,16 @@ class MyText {
     color: MyColor.four,
     fontSize: 14,
   );
+
+  TextStyle titleforgotpassword = GoogleFonts.poppins(
+    fontWeight: FontWeight.bold,
+    color: MyColor.three,
+    fontSize: 24,
+  );
+
+  TextStyle contentforgotpassword = GoogleFonts.poppins(
+    fontWeight: FontWeight.w400,
+    color: MyColor.grey,
+    fontSize: 18,
+  );
 }
