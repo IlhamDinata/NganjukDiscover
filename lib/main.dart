@@ -29,33 +29,33 @@ class MainApp extends StatelessWidget {
         }
 
         if (snapshot.connectionState == ConnectionState.done) {
-          return GetMaterialApp(
-            title: 'Nganjuk Discover ',
-            debugShowCheckedModeBanner: false,
-            initialRoute: PagesPath.forgotpassword,
-            getPages: AppRoute.pages,
-          );
-          // return FutureBuilder(
-          //   future: Future.delayed(const Duration(seconds: 3)),
-          //   builder: (context, snapshot) {
-          //     if (snapshot.connectionState == ConnectionState.done) {
-          //       return Obx(
-          //         () => GetMaterialApp(
-          //           title: 'Nganjuk Discover',
-          //           debugShowCheckedModeBanner: false,
-          //           initialRoute: authController.isSkipIntro.isTrue
-          //               ? authController.isAuth.isTrue
-          //                   ? PagesPath.homepage
-          //                   : PagesPath.loginpage
-          //               : PagesPath.introduction,
-          //           // initialRoute: AppPages.introduction,
-          //           getPages: AppRoute.pages,
-          //         ),
-          //       );
-          //     }
-          //     return SplashScreen();
-          //   },
+          // return GetMaterialApp(
+          //   title: 'Nganjuk Discover ',
+          //   debugShowCheckedModeBanner: false,
+          //   initialRoute: PagesPath.forgotpassword,
+          //   getPages: AppRoute.pages,
           // );
+          return FutureBuilder(
+            future: Future.delayed(const Duration(seconds: 3)),
+            builder: (context, snapshot) {
+              if (snapshot.connectionState == ConnectionState.done) {
+                return Obx(
+                  () => GetMaterialApp(
+                    title: 'Nganjuk Discover',
+                    debugShowCheckedModeBanner: false,
+                    initialRoute: authController.isSkipIntro.isTrue
+                        ? authController.isAuth.isTrue
+                            ? PagesPath.homepage
+                            : PagesPath.loginpage
+                        : PagesPath.introduction,
+                    // initialRoute: AppPages.introduction,
+                    getPages: AppRoute.pages,
+                  ),
+                );
+              }
+              return SplashScreen();
+            },
+          );
         }
         return const LoadingScreen();
       },

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:nganjuk_discover/utils/app_pages.dart';
 import 'package:nganjuk_discover/utils/button_box.dart';
 import 'package:nganjuk_discover/utils/mycolors.dart';
 import 'package:nganjuk_discover/utils/mytext.dart';
@@ -72,7 +73,9 @@ class ForgotPasswordPage extends StatelessWidget {
                       style: MyText().transparanttext,
                     ),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.toNamed(PagesPath.loginpage);
+                      },
                       child: Text(
                         'Login Here',
                         style: MyText().smallbuttontext,
@@ -82,7 +85,9 @@ class ForgotPasswordPage extends StatelessWidget {
                 ),
                 const SizedBox(height: 25),
                 ButtonBox(
-                  onTap: () {},
+                  onTap: () {
+                    Get.toNamed(PagesPath.emailsent);
+                  },
                   label: 'Send Email',
                 ),
               ],

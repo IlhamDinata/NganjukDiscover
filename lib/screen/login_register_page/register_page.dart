@@ -65,9 +65,9 @@ class RegisterPage extends StatelessWidget {
                   },
                   label: 'Sign Up',
                 ),
-                const SizedBox(height: 35),
+                const SizedBox(height: 25),
                 SocialButton(),
-                SizedBox(height: 20),
+                SizedBox(height: 25),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [

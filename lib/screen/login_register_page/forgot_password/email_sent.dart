@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:nganjuk_discover/utils/app_pages.dart';
 import 'package:nganjuk_discover/utils/button_box.dart';
+import 'package:nganjuk_discover/utils/mycolors.dart';
 import 'package:nganjuk_discover/utils/mytext.dart';
 
 class EmailSentPage extends StatelessWidget {
@@ -34,7 +37,7 @@ class EmailSentPage extends StatelessWidget {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 10, vertical: 25),
                   child: Text(
-                    'Forgot Your Password ?',
+                    'Email has been sent',
                     style: MyText().titleforgotpassword,
                     textAlign: TextAlign.center,
                   ),
@@ -42,7 +45,7 @@ class EmailSentPage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(10),
                   child: Text(
-                    'Enter your registered email below to receive password reset instruction',
+                    'Please check your inbox and click in the received link to reset a password',
                     style: MyText().contentforgotpassword,
                     textAlign: TextAlign.center,
                   ),
@@ -50,30 +53,32 @@ class EmailSentPage extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(10),
                   child: SizedBox(
-                    child: Image.asset('assets/gambar/sendemail.png'),
+                    child: Image.asset('assets/gambar/emailalreadysent.png'),
                   ),
+                ),
+                const SizedBox(height: 25),
+                ButtonBox(
+                  onTap: () {
+                    Get.offAllNamed(PagesPath.loginpage);
+                  },
+                  label: 'Back To Login',
                 ),
                 SizedBox(height: 5),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'Remember Password ?',
+                      'Don\'t Receive the Link ?',
                       style: MyText().transparanttext,
                     ),
                     TextButton(
                       onPressed: () {},
                       child: Text(
-                        'Login Here',
+                        'Resend',
                         style: MyText().smallbuttontext,
                       ),
                     ),
                   ],
-                ),
-                const SizedBox(height: 25),
-                ButtonBox(
-                  onTap: () {},
-                  label: 'Send Email',
                 ),
               ],
             ),
