@@ -8,8 +8,30 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          'HomePage',
+          style: MyText().titlelogregtext,
+        ),
+        centerTitle: true,
+        backgroundColor: MyColor.white,
+        elevation: 0,
+      ),
       backgroundColor: MyColor.white,
-      body: Center(child: Text('Home Page')),
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: Column(
+            // mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'HomePage Content',
+                style: MyText().transparanttext,
+                // textAlign: TextAlign.center,
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

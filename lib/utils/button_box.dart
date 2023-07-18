@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/route_manager.dart';
 import 'package:nganjuk_discover/utils/mycolors.dart';
 import 'package:nganjuk_discover/utils/mytext.dart';
 

@@ -3,8 +3,10 @@ import 'package:nganjuk_discover/utils/mycolors.dart';
 import 'package:nganjuk_discover/utils/mytext.dart';
 
 class SquareTile extends StatelessWidget {
-  const SquareTile({super.key, required this.imagePath, required this.text});
+  const SquareTile(
+      {super.key, required this.imagePath, required this.text, this.onTap});
 
+  final Function()? onTap;
   final String imagePath;
   final String text;
 

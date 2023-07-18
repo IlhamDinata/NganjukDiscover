@@ -45,7 +45,7 @@ class RegisterPage extends StatelessWidget {
                 const SizedBox(height: 20),
                 TextBox(
                     controller: emailController,
-                    text: 'E-Mail',
+                    text: 'Email',
                     textInputType: TextInputType.emailAddress,
                     obscure: false),
                 const SizedBox(height: 20),

@@ -2,7 +2,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:nganjuk_discover/controller/auth_controller.dart';
-import 'package:nganjuk_discover/screen/homepage.dart';
 import 'package:nganjuk_discover/screen/intro_page/splashscreen.dart';
 import 'package:nganjuk_discover/utils/app_pages.dart';
 import 'package:nganjuk_discover/utils/app_routes.dart';

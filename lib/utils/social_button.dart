@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:nganjuk_discover/utils/app_pages.dart';
-import 'package:nganjuk_discover/utils/mycolors.dart';
 import 'package:nganjuk_discover/utils/mytext.dart';
 import 'package:nganjuk_discover/utils/square_tile.dart';
 
@@ -46,12 +45,15 @@ class SocialButton extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SquareTile(
+                  onTap: () {},
                   imagePath: 'assets/gambar/google.png',
                   text: 'Google',
                 ),
                 const SizedBox(width: 10),
                 SquareTile(
-                    imagePath: 'assets/gambar/facebook.png', text: 'Facebook'),
+                    onTap: () {},
+                    imagePath: 'assets/gambar/facebook.png',
+                    text: 'Facebook'),
               ],
             ),
             Padding(
