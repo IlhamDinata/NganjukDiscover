@@ -1,5 +1,5 @@
 import 'package:get/route_manager.dart';
-import 'package:nganjuk_discover/screen/homepage.dart';
+import 'package:nganjuk_discover/screen/homepage/homepage.dart';
 import 'package:nganjuk_discover/screen/intro_page/introduction.dart';
 import 'package:nganjuk_discover/screen/login_register_page/forgot_password/email_sent.dart';
 import 'package:nganjuk_discover/screen/login_register_page/forgot_password/forgot_password.dart';

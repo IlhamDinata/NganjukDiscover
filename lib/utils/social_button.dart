@@ -44,13 +44,13 @@ class SocialButton extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SquareTile(
+                SquareTileGrey(
                   onTap: () {},
                   imagePath: 'assets/gambar/google.png',
                   text: 'Google',
                 ),
                 const SizedBox(width: 10),
-                SquareTile(
+                SquareTileGrey(
                     onTap: () {},
                     imagePath: 'assets/gambar/facebook.png',
                     text: 'Facebook'),
@@ -62,7 +62,7 @@ class SocialButton extends StatelessWidget {
                 onTap: () {
                   Get.toNamed(PagesPath.homepage);
                 },
-                child: SquareTile(
+                child: SquareTileGrey(
                     imagePath: 'assets/gambar/guest.png',
                     text: 'Login as Guest'),
               ),

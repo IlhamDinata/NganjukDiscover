@@ -62,4 +62,22 @@ class MyText {
     color: MyColor.grey,
     fontSize: 18,
   );
+
+  TextStyle titlehomepage = GoogleFonts.poppins(
+    fontWeight: FontWeight.w600,
+    color: MyColor.black,
+    fontSize: 14,
+  );
+
+  TextStyle smalltitlehomepage = GoogleFonts.poppins(
+    fontWeight: FontWeight.w500,
+    color: MyColor.black,
+    fontSize: 13,
+  );
+
+  TextStyle transparanttext2 = GoogleFonts.poppins(
+    fontWeight: FontWeight.w400,
+    color: MyColor.grey.withOpacity(0.8),
+    fontSize: 14,
+  );
 }

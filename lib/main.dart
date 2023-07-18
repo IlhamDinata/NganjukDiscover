@@ -31,7 +31,7 @@ class MainApp extends StatelessWidget {
           // return GetMaterialApp(
           //   title: 'Nganjuk Discover ',
           //   debugShowCheckedModeBanner: false,
-          //   initialRoute: PagesPath.forgotpassword,
+          //   initialRoute: PagesPath.homepage,
           //   getPages: AppRoute.pages,
           // );
           return FutureBuilder(
