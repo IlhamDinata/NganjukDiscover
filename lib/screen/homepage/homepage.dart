@@ -98,6 +98,26 @@ class HomePage extends StatelessWidget {
               const SizedBox(height: 10),
               IconCategory(),
               const SizedBox(height: 15),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 15),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Popular in town',
+                      style: MyText().titlehomepage,
+                    ),
+                    TextButton(
+                      onPressed: () {},
+                      child: Text(
+                        'View all',
+                        style: MyText().smallbuttontext,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(height: 15),
               Popular(),
             ],
           ),

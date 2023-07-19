@@ -80,4 +80,10 @@ class MyText {
     color: MyColor.grey.withOpacity(0.8),
     fontSize: 14,
   );
+
+  TextStyle titlecontent = GoogleFonts.poppins(
+    fontWeight: FontWeight.w600,
+    color: MyColor.black,
+    fontSize: 14,
+  );
 }

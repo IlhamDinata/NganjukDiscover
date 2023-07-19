@@ -48,6 +48,7 @@ class SquareTileWhite extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
+      height: 80,
       width: 170,
       child: Container(
         padding: EdgeInsets.all(10),

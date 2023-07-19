@@ -30,4 +30,5 @@ flutter:
   assets:
   - assets/gambar/
   - assets/lottie/
+  - assets/kontenwisata/
   uses-material-design: true
