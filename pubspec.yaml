@@ -16,6 +16,7 @@ dependencies:
   get: ^4.6.5
   google_fonts: ^5.1.0
   google_sign_in: ^6.1.4
+  iconly: ^1.0.1
   lottie: ^2.4.0
   page_transition: ^2.0.9
   smooth_page_indicator: ^1.1.0
@@ -31,4 +32,5 @@ flutter:
   - assets/gambar/
   - assets/lottie/
   - assets/kontenwisata/
+  - assets/kontenkuliner/
   uses-material-design: true

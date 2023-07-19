@@ -27,20 +27,20 @@ class Content {
         image: 'assets/kontenwisata/bendungan.jpeg',
         insideContent: 'Rejoso, Nganjuk'),
     Content(
-        title: 'Semantok',
-        image: 'assets/kontenwisata/bendungan.jpeg',
-        insideContent: 'Rejoso, Nganjuk'),
+        title: 'Sego Jagung',
+        image: 'assets/kontenkuliner/nasijagung.jpeg',
+        insideContent: 'Nganjuk, Nganjuk'),
     Content(
-        title: 'Semantok',
-        image: 'assets/kontenwisata/bendungan.jpeg',
-        insideContent: 'Rejoso, Nganjuk'),
+        title: 'Onde Njeblos',
+        image: 'assets/kontenkuliner/Ondeonde.jpeg',
+        insideContent: 'Loceret, Nganjuk'),
     Content(
-        title: 'Semantok',
-        image: 'assets/kontenwisata/bendungan.jpeg',
-        insideContent: 'Rejoso, Nganjuk'),
+        title: 'Sego Becek',
+        image: 'assets/kontenkuliner/segobecek.jpg',
+        insideContent: 'Berbek, Nganjuk'),
     Content(
-        title: 'Semantok',
-        image: 'assets/kontenwisata/bendungan.jpeg',
-        insideContent: 'Rejoso, Nganjuk'),
+        title: 'Sego Jagung',
+        image: 'assets/kontenkuliner/segojagung.jpg',
+        insideContent: 'Sukomoro, Nganjuk'),
   ];
 }

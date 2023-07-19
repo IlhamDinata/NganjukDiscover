@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:iconly/iconly.dart';
 import 'package:nganjuk_discover/model/content_model.dart';
 import 'package:nganjuk_discover/utils/mycolors.dart';
 import 'package:nganjuk_discover/utils/mytext.dart';
@@ -37,10 +38,10 @@ class Popular extends StatelessWidget {
       shrinkWrap: true,
       physics: NeverScrollableScrollPhysics(),
       gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-          maxCrossAxisExtent: 350,
+          maxCrossAxisExtent: 300,
           childAspectRatio: 1.1,
-          crossAxisSpacing: 10,
-          mainAxisSpacing: 10),
+          crossAxisSpacing: 15,
+          mainAxisSpacing: 15),
       itemCount: Content.contents.length,
       itemBuilder: (BuildContext context, int index) {
         return ContentCard(index: index);
@@ -56,10 +57,10 @@ class ContentCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 250,
-      height: 750,
+      // width: 250,
+      // height: 750,
       child: Container(
-        padding: EdgeInsets.only(top: 10, left: 10, right: 10),
+        // padding: EdgeInsets.only(top: 10, left: 10, right: 10),
         decoration: BoxDecoration(
             border: Border.all(color: MyColor.white),
             borderRadius: BorderRadius.circular(15),
@@ -67,19 +68,28 @@ class ContentCard extends StatelessWidget {
         child: Column(
           children: [
             Stack(
+              alignment: Alignment.topRight,
               children: [
-                SizedBox(
-                  width: double.infinity,
-                  child: Image.asset(
-                    Content.contents[index].image,
-                    width: 100,
-                    height: 100,
+                Container(
+                  // decoration: BoxDecoration(boxShadow: [
+                  //   BoxShadow(
+                  //       offset: Offset(0, 0.1),
+                  //       blurRadius: 10,
+                  //       spreadRadius: 0.1,
+                  //       blurStyle: BlurStyle.normal)
+                  // ]),
+                  padding: const EdgeInsets.only(top: 5, left: 3, right: 3),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(15),
+                    child: Image.asset(
+                      Content.contents[index].image,
+                      fit: BoxFit.cover,
+                      width: 130,
+                      height: 100,
+                    ),
                   ),
                 ),
-                // Align(
-                //   child: likeButton(context),
-                //   alignment: Alignment.topRight,
-                // )
+                likeButton(context),
               ],
             ),
             Text(
@@ -106,31 +116,29 @@ class ContentCard extends StatelessWidget {
 
 likeButton(BuildContext context) {
   return Padding(
-    padding: const EdgeInsets.all(20),
+    padding: const EdgeInsets.all(10),
     child: InkWell(
       onTap: () {
         Navigator.pop(context);
       },
       child: Container(
         clipBehavior: Clip.hardEdge,
-        height: 55,
-        width: 55,
+        height: 25,
+        width: 25,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(25),
         ),
-        child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-          child: Container(
-            height: 55,
-            width: 55,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(25),
-            ),
-            child: Icon(
-              Icons.arrow_back_ios,
-              size: 20,
-              color: MyColor.white,
-            ),
+        child: Container(
+          height: 25,
+          width: 25,
+          decoration: BoxDecoration(
+            color: MyColor.white,
+            borderRadius: BorderRadius.circular(25),
+          ),
+          child: Icon(
+            IconlyLight.heart,
+            size: 15,
+            color: Colors.black,
           ),
         ),
       ),
