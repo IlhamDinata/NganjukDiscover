@@ -1,46 +1,56 @@
 class Content {
   final String title;
   final String image;
-  final String insideContent;
+  final String location;
+  final String category;
 
   Content({
     required this.title,
     required this.image,
-    required this.insideContent,
+    required this.location,
+    required this.category,
   });
 
   static List<Content> contents = [
     Content(
         title: 'Sedudo',
         image: 'assets/kontenwisata/sedudo.jpeg',
-        insideContent: 'Sawahan, Nganjuk'),
+        location: 'Sawahan, Nganjuk',
+        category: 'Wisata'),
     Content(
         title: 'Roro Kuning',
         image: 'assets/kontenwisata/rorokuning.jpeg',
-        insideContent: 'Loceret, Nganjuk'),
+        location: 'Loceret, Nganjuk',
+        category: 'Wisata'),
     Content(
         title: 'Candi Ngetos',
         image: 'assets/kontenwisata/ngetos.jpeg',
-        insideContent: 'Berbek, Nganjuk'),
+        location: 'Berbek, Nganjuk',
+        category: 'Wisata'),
     Content(
         title: 'Semantok',
         image: 'assets/kontenwisata/bendungan.jpeg',
-        insideContent: 'Rejoso, Nganjuk'),
+        location: 'Rejoso, Nganjuk',
+        category: 'Wisata'),
     Content(
         title: 'Sego Jagung',
         image: 'assets/kontenkuliner/nasijagung.jpeg',
-        insideContent: 'Nganjuk, Nganjuk'),
+        location: 'Nganjuk, Nganjuk',
+        category: 'Kuliner'),
     Content(
         title: 'Onde Njeblos',
         image: 'assets/kontenkuliner/Ondeonde.jpeg',
-        insideContent: 'Loceret, Nganjuk'),
+        location: 'Loceret, Nganjuk',
+        category: 'Kuliner'),
     Content(
         title: 'Sego Becek',
         image: 'assets/kontenkuliner/segobecek.jpg',
-        insideContent: 'Berbek, Nganjuk'),
+        location: 'Berbek, Nganjuk',
+        category: 'Kuliner'),
     Content(
         title: 'Sego Jagung',
         image: 'assets/kontenkuliner/segojagung.jpg',
-        insideContent: 'Sukomoro, Nganjuk'),
+        location: 'Sukomoro, Nganjuk',
+        category: 'Kuliner'),
   ];
 }

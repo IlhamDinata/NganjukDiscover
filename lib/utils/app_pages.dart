@@ -5,6 +5,8 @@ class AppPages {
   static const emailsent = PagesPath.emailsent;
   static const registerpage = PagesPath.registerpage;
   static const homepage = PagesPath.homepage;
+  static const wisatapage = PagesPath.wisatapage;
+  static const kulinerpage = PagesPath.kulinerpage;
 }
 
 abstract class PagesPath {
@@ -14,4 +16,6 @@ abstract class PagesPath {
   static const emailsent = '/emailsent';
   static const homepage = '/homepage';
   static const registerpage = '/registerpage';
+  static const wisatapage = '/wisatapage';
+  static const kulinerpage = '/kulinerpage';
 }

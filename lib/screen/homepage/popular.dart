@@ -11,27 +11,6 @@ import 'package:tuple/tuple.dart';
 class Popular extends StatelessWidget {
   const Popular({super.key});
 
-  // @override
-  // Widget build(BuildContext context) {
-  //   return GridView.count(
-  //     crossAxisSpacing: 5,
-  //     mainAxisSpacing: 5,
-  //     crossAxisCount: 2,
-  //     shrinkWrap: true,
-  //     physics: NeverScrollableScrollPhysics(),
-  //     children: List.generate(
-  //       8,
-  //       (index) {
-  //         return Container(
-  //           child: Card(
-  //             color: MyColor.white,
-  //           ),
-  //         );
-  //       },
-  //     ),
-  //   );
-  // }
-
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
@@ -44,15 +23,18 @@ class Popular extends StatelessWidget {
           mainAxisSpacing: 15),
       itemCount: Content.contents.length,
       itemBuilder: (BuildContext context, int index) {
-        return ContentCard(index: index);
+        return PopularContent(index: index);
       },
     );
   }
 }
 
-class ContentCard extends StatelessWidget {
+class PopularContent extends StatelessWidget {
   final int index;
-  ContentCard({Key? key, required this.index}) : super(key: key);
+  PopularContent({
+    Key? key,
+    required this.index,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -71,13 +53,6 @@ class ContentCard extends StatelessWidget {
               alignment: Alignment.topRight,
               children: [
                 Container(
-                  // decoration: BoxDecoration(boxShadow: [
-                  //   BoxShadow(
-                  //       offset: Offset(0, 0.1),
-                  //       blurRadius: 10,
-                  //       spreadRadius: 0.1,
-                  //       blurStyle: BlurStyle.normal)
-                  // ]),
                   padding: const EdgeInsets.only(top: 5, left: 3, right: 3),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(15),
@@ -102,7 +77,7 @@ class ContentCard extends StatelessWidget {
               children: [
                 Icon(Icons.location_on, color: MyColor.grey.withOpacity(0.6)),
                 Text(
-                  Content.contents[index].insideContent,
+                  Content.contents[index].location,
                   style: MyText().transparanttext2,
                 ),
               ],
