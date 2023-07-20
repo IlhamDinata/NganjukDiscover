@@ -10,5 +10,5 @@ class MyColor {
   static Color white = Colors.white;
   static Color black = Colors.black;
   static Color grey = Colors.grey;
-  static Color background = Color(0xfffafafa);
+  static Color background = Colors.grey.shade100;
 }

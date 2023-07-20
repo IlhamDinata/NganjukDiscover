@@ -3,8 +3,12 @@ import 'package:nganjuk_discover/utils/mycolors.dart';
 import 'package:nganjuk_discover/utils/mytext.dart';
 
 class SquareTileGrey extends StatelessWidget {
-  const SquareTileGrey(
-      {super.key, required this.imagePath, required this.text, this.onTap});
+  const SquareTileGrey({
+    super.key,
+    required this.imagePath,
+    required this.text,
+    this.onTap,
+  });
 
   final Function()? onTap;
   final String imagePath;
@@ -38,8 +42,12 @@ class SquareTileGrey extends StatelessWidget {
 }
 
 class SquareTileWhite extends StatelessWidget {
-  const SquareTileWhite(
-      {super.key, required this.imagePath, required this.text, this.onTap});
+  const SquareTileWhite({
+    super.key,
+    required this.imagePath,
+    required this.text,
+    this.onTap,
+  });
 
   final Function()? onTap;
   final String imagePath;

@@ -60,7 +60,7 @@ class SocialButton extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 38, vertical: 10),
               child: InkWell(
                 onTap: () {
-                  Get.toNamed(PagesPath.homepage);
+                  Get.toNamed(PagesPath.bottomnavbar);
                 },
                 child: SquareTileGrey(
                     imagePath: 'assets/gambar/guest.png',

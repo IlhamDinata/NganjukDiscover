@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:nganjuk_discover/controller/auth_controller.dart';
+import 'package:nganjuk_discover/screen/bottomnavbar.dart';
 import 'package:nganjuk_discover/screen/intro_page/splashscreen.dart';
 import 'package:nganjuk_discover/utils/app_pages.dart';
 import 'package:nganjuk_discover/utils/app_routes.dart';
@@ -44,7 +45,7 @@ class MainApp extends StatelessWidget {
                     debugShowCheckedModeBanner: false,
                     initialRoute: authController.isSkipIntro.isTrue
                         ? authController.isAuth.isTrue
-                            ? PagesPath.homepage
+                            ? PagesPath.bottomnavbar
                             : PagesPath.loginpage
                         : PagesPath.introduction,
                     // initialRoute: AppPages.introduction,
