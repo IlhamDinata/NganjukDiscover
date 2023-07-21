@@ -2,6 +2,7 @@ import 'package:get/route_manager.dart';
 import 'package:nganjuk_discover/screen/bottomnavbar.dart';
 import 'package:nganjuk_discover/screen/category/kuliner/kuliner_page.dart';
 import 'package:nganjuk_discover/screen/category/wisata/wisata_page.dart';
+import 'package:nganjuk_discover/screen/content/inside_content.dart';
 import 'package:nganjuk_discover/screen/homepage/homepage.dart';
 import 'package:nganjuk_discover/screen/intro_page/introduction.dart';
 import 'package:nganjuk_discover/screen/login_register_page/forgot_password/email_sent.dart';
@@ -28,5 +29,6 @@ class AppRoute {
     GetPage(name: PagesPath.settingpage, page: () => SettingPage()),
     GetPage(name: PagesPath.wisatapage, page: () => WisataPage()),
     GetPage(name: PagesPath.kulinerpage, page: () => KulinerPage()),
+    GetPage(name: PagesPath.insidecontent, page: () => InsideContent()),
   ];
 }

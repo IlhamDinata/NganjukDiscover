@@ -11,6 +11,7 @@ class AppPages {
   static const settingpage = PagesPath.settingpage;
   static const wisatapage = PagesPath.wisatapage;
   static const kulinerpage = PagesPath.kulinerpage;
+  static const insidecontent = PagesPath.insidecontent;
 }
 
 abstract class PagesPath {
@@ -26,4 +27,5 @@ abstract class PagesPath {
   static const settingpage = '/settingpage';
   static const wisatapage = '/wisatapage';
   static const kulinerpage = '/kulinerpage';
+  static const insidecontent = '/insidecontent';
 }

@@ -1,8 +1,11 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 import 'package:iconly/iconly.dart';
 import 'package:nganjuk_discover/model/content_model.dart';
+import 'package:nganjuk_discover/screen/content/inside_content.dart';
+import 'package:nganjuk_discover/utils/app_pages.dart';
 import 'package:nganjuk_discover/utils/mycolors.dart';
 import 'package:nganjuk_discover/utils/mytext.dart';
 
@@ -23,7 +26,8 @@ class Popular extends StatelessWidget {
             mainAxisSpacing: 15),
         itemCount: Content.contents.length,
         itemBuilder: (BuildContext context, int index) {
-          return PopularContent(index: index);
+          Content insideContent = Content.contents[index];
+          return PopularContent(index: index, insideContent: insideContent);
         },
       ),
     );
@@ -32,15 +36,19 @@ class Popular extends StatelessWidget {
 
 class PopularContent extends StatelessWidget {
   final int index;
+  final insideContent;
   PopularContent({
     Key? key,
     required this.index,
+    required this.insideContent,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        Get.toNamed(AppPages.insidecontent, arguments: insideContent);
+      },
       child: SizedBox(
         // width: 250,
         // height: 750,
