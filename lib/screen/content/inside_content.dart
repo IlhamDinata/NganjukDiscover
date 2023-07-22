@@ -2,8 +2,10 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:like_button/like_button.dart';
 import 'package:nganjuk_discover/model/content_model.dart';
 import 'package:nganjuk_discover/utils/mycolors.dart';
+import 'package:nganjuk_discover/utils/mytext.dart';
 
 class InsideContent extends StatelessWidget {
   InsideContent({super.key});
@@ -20,11 +22,43 @@ class InsideContent extends StatelessWidget {
               width: double.infinity,
               child: Image.asset(insideContent.image),
             ),
-            buttonArrow(context),
+            // buttonArrow(context),
+            Padding(
+              padding: const EdgeInsets.all(20),
+              child: InkWell(
+                onTap: () {
+                  Navigator.pop(context);
+                },
+                child: Container(
+                  clipBehavior: Clip.hardEdge,
+                  height: 55,
+                  width: 55,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(25),
+                  ),
+                  child: BackdropFilter(
+                    filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+                    child: Container(
+                      height: 55,
+                      width: 55,
+                      decoration: BoxDecoration(
+                        color: MyColor.white,
+                        borderRadius: BorderRadius.circular(25),
+                      ),
+                      child: Icon(
+                        Icons.arrow_back_ios_new,
+                        size: 20,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
             DraggableScrollableSheet(
               initialChildSize: 0.6,
               maxChildSize: 1.0,
-              minChildSize: 1.0,
+              minChildSize: 0.6,
               builder: (context, scrollController) {
                 return Container(
                   padding: EdgeInsetsDirectional.symmetric(horizontal: 20),
@@ -52,11 +86,40 @@ class InsideContent extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Text(insideContent.title),
+                      Text(
+                        insideContent.title,
+                        style: MyText().titlehomepage,
+                      ),
                       const SizedBox(height: 10),
-                      Text(insideContent.location),
-                      const Row(
-                        children: [],
+                      Row(
+                        children: [
+                          Icon(Icons.location_on,
+                              color: MyColor.grey.withOpacity(0.6)),
+                          Text(
+                            insideContent.location,
+                            style: MyText().transparanttext2,
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 15),
+                      Row(
+                        children: [
+                          const CircleAvatar(
+                            radius: 25,
+                            backgroundImage:
+                                AssetImage('assets/gambar/guest.png'),
+                          ),
+                          const SizedBox(width: 5),
+                          Text(
+                            "Owner",
+                            style: MyText().nametext,
+                          ),
+                          Spacer(),
+                          LikeButton(
+                            likeCount: 0,
+                            countPostion: CountPostion.right,
+                          ),
+                        ],
                       )
                     ],
                   ),

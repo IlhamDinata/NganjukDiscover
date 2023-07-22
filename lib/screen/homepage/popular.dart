@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:iconly/iconly.dart';
 import 'package:nganjuk_discover/model/content_model.dart';
-import 'package:nganjuk_discover/screen/content/inside_content.dart';
 import 'package:nganjuk_discover/utils/app_pages.dart';
 import 'package:nganjuk_discover/utils/mycolors.dart';
 import 'package:nganjuk_discover/utils/mytext.dart';
