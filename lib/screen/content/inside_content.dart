@@ -142,16 +142,16 @@ buttonArrow(BuildContext context) {
       },
       child: Container(
         clipBehavior: Clip.hardEdge,
-        height: 55,
-        width: 55,
+        height: 45,
+        width: 45,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(25),
         ),
         child: BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
           child: Container(
-            height: 55,
-            width: 55,
+            height: 45,
+            width: 45,
             decoration: BoxDecoration(
               color: MyColor.white,
               borderRadius: BorderRadius.circular(25),
