@@ -22,7 +22,6 @@ class InsideContent extends StatelessWidget {
               width: double.infinity,
               child: Image.asset(insideContent.image),
             ),
-            // buttonArrow(context),
             Padding(
               padding: const EdgeInsets.all(20),
               child: InkWell(

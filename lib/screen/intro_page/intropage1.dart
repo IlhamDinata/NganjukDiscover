@@ -23,8 +23,6 @@ class IntroPage1 extends StatelessWidget {
             ),
             SizedBox(height: Dimens(context).height * 0.05),
             SizedBox(
-              // width: 300,
-              // height: 300,
               child: Lottie.asset('assets/lottie/nganjukdiscover.json'),
             ),
             SizedBox(height: Dimens(context).height * 0.06),

@@ -68,7 +68,6 @@ class LoginPage extends StatelessWidget {
                 const SizedBox(height: 20),
                 ButtonBox(
                   onTap: () {
-                    // Get.toNamed(PagesPath.homepage);
                     Get.snackbar(
                       'Login',
                       'Login Successfully',
